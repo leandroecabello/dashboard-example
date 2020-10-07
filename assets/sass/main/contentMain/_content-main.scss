@@ -1,0 +1,9 @@
+.content-main {
+    width: 100%;
+    margin: 100px 50px 50px 50px;
+    background: #ffffff;
+}
+
+@import './dataWelcome/dataWelcome';
+@import './mainData/mainData';
+@import './media-querys';

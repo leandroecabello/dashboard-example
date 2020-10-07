@@ -1,0 +1,13 @@
+.logo {
+    transition: all 0.5s;
+    a{
+        color: $color2;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
+
+.logo.active{
+    margin-left: -100px;
+    transition: all 0.5s;
+}

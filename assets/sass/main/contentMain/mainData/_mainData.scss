@@ -1,0 +1,10 @@
+.content-main-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+@import './contentForm/contentForm';
+@import './dataForm/formData';
+@import './media-querys';

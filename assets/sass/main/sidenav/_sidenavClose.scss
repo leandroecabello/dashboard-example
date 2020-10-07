@@ -1,0 +1,21 @@
+.content-sidenav.sidenavClose {
+    min-width: 80px;
+    transition: min-width 0.5s ease-out;
+    .content-sidenavMenu{
+        .sidenavMenu {
+            li{
+                padding-left: 25px;
+               a{
+                    transition: all 0.2s;
+                    opacity: 0;  
+                    margin-left: -100px;
+                }
+                .dropdown-icon{
+                    transition: all 0.2s;
+                    opacity: 0;
+                    margin-left: -100px;
+                } 
+            }    
+        }
+    }
+}

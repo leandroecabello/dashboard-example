@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS Syles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">    
+    
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/d99267f501.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        
+    <header class="header bg-primary">
+        <div class="header-logo">
+            <div class="logo" id="logo">
+                <a href="#" >LOGO</a>
+            </div>
+            <div class="hamburger">
+                <div class="_layer -top"></div>
+                <div class="_layer -mid"></div>
+                <div class="_layer -bottom"></div>
+            </div>
+        </div>
+        <div class="header-data">
+            <div class="header-data-text">
+                <div class="header-data-text-fullname">
+                    Jhon Doe
+                </div>
+                <div class="header-data-text-profession">
+                    Jr. Developer
+                </div>
+            </div> 
+            <div class="header-data-avatar">
+                <div class="header-data-avatar-dropdown">        
+                    <form class="form-avatar">
+                        <label class="btn btn-file">
+                            <input type="file" id="avatar" class="hidden">
+                            <img width="42" class="rounded-circle" src="assets/img/avatar.png" alt="avatar">   
+                        </label>
+                    </form>
+                    <a class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-angle-down ml-3"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </div>        
+            </div>  
+        </div>  
+    </header>    
+    
+    <main class="main">    
+        <aside class="content-sidenav bg-primary" id="sidenav">
+            <nav class="content-sidenavMenu">
+                <ul class="sidenavMenu">
+                    <li>
+                        <i class="iconmenu fa fa-rocket"></i>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li class="sidenavMenu-list-options">
+                        <div>
+                            <i class="iconmenu fa fa-pen"></i>
+                            <a href="#">Edit</a>
+                            <i class="iconmenu dropdown-icon fa fa-angle-down ml-3" id="dropdown-icon"></i>
+                        </div>
+                        <ul class="sidenavMenu-list-options-items" id="alternate-list">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <i class="iconmenu fas fa-cog"></i>
+                        <a href="#">Config</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="content-main">
+            
+            <article class="content-main-welcome">
+                <div class="data-welcome">
+                    <h2>Welcome</h2>
+                </div>
+            </article>
+
+            <div class="content-main-form">
+                <article class="row p-4 content-form">
+                    <div class="container">
+                        <div class="card content-form-card">
+                            <div class="card-header content-form-card-head">
+                                <h3>Task</h3>
+                            </div>
+                            <div class="card-body">
+                                <form id="task-form">
+                                    <div class="form-group">
+                                        <input 
+                                            class="form-control" 
+                                            type="text" 
+                                            id="task-title"
+                                            placeholder="Task Title" 
+                                            autofocus>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea 
+                                            class="form-control"
+                                            rows="3"
+                                            id="task-description"
+                                            placeholder="Task Description"
+                                        >
+                                        </textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button 
+                                            type="submit" 
+                                            class="btn btn-primary btn-block"
+                                            id="btn-task-form"
+                                        >
+                                            Save
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="row p-4 form-data">
+                    <div class="container">
+                        <div class="card form-data-card">
+                            <table class="table form-data-card-table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Tasks</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="task-container">
+                                </tbody>
+                            </table>                          
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-primary">
+        <div class="content-footer">
+            <p>2020 &copy; <span><a href="#">Leandro E. Cabello</a></span></p>
+            <div class="footer-icons">
+                <div class="icon-footer">
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="icon-footer">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="icon-footer">
+                    <a href="#"><i class="fab fa-github-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase Scripts -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+   
+    <script src="./assets/js/fbScript.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <!-- Scripts -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/uploadAvatar.js"></script>
+    <script src="./assets/js/form.js"></script>
+</body>
+</html>

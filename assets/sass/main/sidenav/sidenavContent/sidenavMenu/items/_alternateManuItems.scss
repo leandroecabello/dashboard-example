@@ -1,0 +1,16 @@
+.sidenavMenu-list-options-items{
+    margin-top: 5vh;
+    transition: all 0.5s;
+    opacity: 0;
+    position: absolute;
+    li{
+        color: $color2;
+        margin-bottom: 2vh;
+    }
+}
+
+.sidenavMenu-list-options-items.active{
+    transition: all 0.5s;
+    opacity: 1;
+    margin-top: 7vh;
+}

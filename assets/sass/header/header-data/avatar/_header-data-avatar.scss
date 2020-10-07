@@ -1,0 +1,13 @@
+.header-data-avatar{
+    display: flex;
+    align-items: center;
+    .header-data-avatar-dropdown{
+        display: flex;
+        align-items: center;
+        .dropdown-menu{
+            margin-right: 30px;
+        }
+    }
+}
+
+@import './avatar';

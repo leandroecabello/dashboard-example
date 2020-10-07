@@ -1,0 +1,8 @@
+.header-data{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+@import './avatar/header-data-avatar';
+@import './text/header-data-text';

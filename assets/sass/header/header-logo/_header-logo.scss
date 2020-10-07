@@ -1,0 +1,16 @@
+.header-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-left: 30px;
+    transition: all 0.5s;
+}
+
+.header-logo.active{
+    width: 30px;
+    transition: all 0.5s;
+}
+
+@import './hamburger/hamburguer';
+@import './logo/logo';

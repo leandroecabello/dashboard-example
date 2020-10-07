@@ -1,0 +1,22 @@
+.sidenavMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    li{
+        list-style: none;
+        margin-bottom: 3vh;
+        display: flex;
+        a{
+            color: $color2;
+            font-size: 1.5rem;  
+            text-decoration: none;  
+            transition: all 0.5s;
+            opacity: 1;
+        }
+    }       
+}
+
+@import './iconsMenu';
+@import './dropdownAlternateMenu';
+@import './alternateList';

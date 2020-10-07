@@ -1,0 +1,9 @@
+@media (max-width:720px) {  
+    .header-logo{
+        flex-direction: row-reverse;
+        width: 45%;
+    } 
+    .header-data-text{
+        display: none;
+    }
+}
